@@ -1,366 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hassan Khan's CV</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="favicon.png" type="image/x-icon" />
-    <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        color: #333;
-        background-color: #f0f0f3;
-        margin: 0;
-        padding: 20px;
-      }
-      .container {
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background: #fff;
-        border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-      }
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-bottom: 2px solid #1565c0;
-      }
-      .header .left {
-        flex: 1;
-      }
-      .header .right {
-        margin-top: 25px;
-        flex: 1;
-        text-align: center;
-        margin-bottom: -15px;
-      }
-      .header h1 {
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-        font-size: 2.5em;
-        color: #1565c0;
-        margin: 0;
-      }
-      .header p {
-        margin: 5px 0;
-        color: #1565c0;
-      }
-      .header a {
-        color: #1565c0;
-        text-decoration: none;
-      }
-      .header a:hover {
-        text-decoration: underline;
-      }
-      h2 {
-        font-size: 1.5em;
-        color: #1565c0;
-        border-bottom: 2px solid #1565c0;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-      }
-      h3 {
-        font-size: 1.2em;
-        color: #1565c0;
-      }
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      ul li::before {
-        content: "• ";
-        color: #1565c0;
-        display: inline-block;
-        margin-right: 10px;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      .company-name {
-        font-weight: bold;
-        color: #1565c0;
-      }
-      .certificates {
-        margin-top: 20px;
-        padding: 15px;
-        border: 1px solid #bce8f1;
-        background-color: #e6f8ff;
-        border-radius: 5px;
-      }
-      .certificates a {
-        color: #245269;
-        font-weight: bold;
-        text-decoration: underline;
-      }
-      .certificates a:hover {
-        color: #1a3a4a;
-      }
-      .skills,
-      .education,
-      .projects {
-        margin-top: 20px;
-      }
-      .skills ul,
-      .education ul,
-      .projects ul {
-        margin: 0;
-      }
-      .skills li,
-      .education li,
-      .projects li {
-        margin: 10px 0;
-      }
-      .projects h3 {
-        margin-top: 10px;
-      }
-      .projects a {
-        color: #1565c0;
-        text-decoration: none;
-      }
-      .projects a:hover {
-        text-decoration: underline;
-      }
-      .header,
-      .section,
-      .certificates {
-        position: relative;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-      .header::before,
-      .section::before,
-      .certificates::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: inset 0 8px 30px rgba(0, 0, 0, 0.12);
-        z-index: -1;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="left">
-          <h1>Hassan Khan</h1>
-          <p>
-            Email:
-            <a href="mailto:hassanusman26373@gmail.com"
-              >hassanusman26373@gmail.com</a
-            >
-          </p>
-          <p>Phone: <a href="tel:+923343870917">+92-334-3870917</a></p>
-          <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/hassan-khan-224653222/" target="_blank"
-              >linkedin.com/in/hassan-khan-224653222</a
-            >
-          </p>
-          <p>
-            GitHub:
-            <a href="https://github.com/Hassankhan6373" target="_blank"
-              >github.com/Hassankhan6373</a
-            >
-          </p>
-          <p>
-            GitLab:
-            <a href="https://gitlab.com/hassankhan26373" target="_blank"
-              >gitlab.com/Hassankhan26373</a
-            >
-          </p>
-        </div>
-        <div class="right">
-          <p>
-            "Full-Stack & Blockchain Developer with experience in React, Next.js, Node.js, smart contracts, AWS, and secure wallet integrations. Focused on building scalable, user-friendly Web2 & Web3 applications."
-          </p>
-        </div>
-      </div>
-      <div class="section">
-        <h2>Experience</h2>
-        <div class="job">
-          <h3>Software Engineer</h3>
-          <p class="company-name">
-            Pixpel - <span class="italic">Sep 2023 - Present</span>
-          </p>
-          <ul>
-            <li>
-              Worked on wallet integration (custodial, non-custodial, hybrid, and decentralized), P2P DEX, launchpad, and NFT marketplace for Pixpel gaming platform.
-            </li>
-            <li>
-              Deployed smart contracts on Zeta and Polygon chains.
-            </li>
-            <li>
-              Integrated Fireblocks for secure transactions (including private blockchain features), Pinata for IPFS-based cloud storage of NFT metadata/assets, and contributed to making NFTs usable in games.
-            </li>
-            <li>
-              Focused on Rust-based blockchains for EVM compatibility, AWS Lambda serverless functions (with Docker container support), S3 buckets for storage, RDS for databases, and AI image recognition via AWS Rekognition.
-            </li>
-            <li>
-              Implemented payment integrations including Stripe (with Google Pay and Apple Pay support) for fiat on-ramps/off-ramps.
-            </li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Full-Stack Developer</h3>
-          <p class="company-name">
-            Cubicus - <span class="italic">Sep 2023 - Oct 2024</span>
-          </p>
-          <ul>
-            <li>
-              Developed responsive web applications from scratch.
-            </li>
-            <li>
-              Implemented and developed front-end and back-end logic.
-            </li>
-            <li>
-              Collaborated with team for DevOps, third-party APIs integration, AWS services (Lambda, EC2, S3, RDS), and Docker containerization.
-            </li>
-            <li>
-              Set up Fireblocks workspaces (custodial and non-custodial/embedded wallets) and integrated them with backend for seamless, secure transaction handling including private key management and hybrid wallet solutions.
-            </li>
-          </ul>
-        </div>
-        <div class="job">
-          <h3>Full-Stack Developer</h3>
-          <p class="company-name">
-            Coderatory - <span class="italic">Jul 2022 - Sep 2022</span>
-          </p>
-          <ul>
-            <li>
-              Developed a business website with Angular, SASS, and Bootstrap.
-            </li>
-            <li>
-              Improved existing systems with modern frameworks and technologies.
-            </li>
-            <li>
-              Utilized Docker for containerization and seamless deployments.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="section skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>
-            <strong>Programming Languages:</strong> JavaScript, TypeScript,
-            Rust, Solidity, C, C++
-          </li>
-          <li>
-            <strong>Frameworks/Libraries:</strong> React, React Native, Node.js,
-            Next.js, Angular, Redux, Tailwind CSS, Bootstrap, Material UI, SASS
-          </li>
-          <li>
-            <strong>Databases:</strong>
-          </li>
-          <p><strong>SQL:</strong> PostgreSQL and MySQL (including AWS RDS)</p>
-          <p><strong>NoSQL:</strong> MongoDB, Firebase, and Redis</p>
-          <li>
-            <strong>Blockchain & Web3:</strong> Smart Contracts (Rust, Solidity),
-            Fireblocks (custodial, non-custodial/embedded, hybrid & decentralized wallets, private key management), IPFS, Pinata (cloud IPFS pinning & storage), blockchain wallet integrations
-          </li>
-          <li>
-            <strong>Cloud & DevOps:</strong> AWS (EC2, S3 Buckets, SNS, Amplify, Lambda with Docker containerization, RDS, AI/ML services including Rekognition for image recognition), Docker, Git, Jira, Vercel, Netlify, AWS Localization
-          </li>
-          <li>
-            <strong>Payments & Integrations:</strong> Stripe (including Google Pay, Apple Pay), payment gateway integrations for fiat-crypto on/off-ramps
-          </li>
-          <li>
-            <strong>AI & Tools:</strong> ChatGPT/OpenAI API integration, AI tools for chat features, Slack & Monday.com for team collaboration
-          </li>
-        </ul>
-      </div>
-      <div class="section events">
-        <h2>Events</h2>
-        <ul>
-          <li>
-            <strong>Token2049:</strong> Participated in the world’s largest Web3
-            and crypto event. This conference brought together over 20,000
-            attendees and 500+ speakers, including industry leaders like Vitalik
-            Buterin and Edward Snowden. It provided a platform for blockchain
-            innovators and enthusiasts to exchange ideas and showcase the latest
-            advancements in crypto, DeFi, NFTs, and decentralized applications.
-            The event also offered unparalleled networking opportunities,
-            fostering connections between global leaders in crypto and
-            blockchain industries.
-          </li>
-        </ul>
-      </div>
-      <div class="section education">
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <strong>Bachelor of Engineering (Electronics):</strong> Usman
-            Institute of Technology, Oct 2017 - Nov 2021
-          </li>
-          <li>
-            <strong>Masters in Computer Science:</strong> Bahria University, Feb
-            2024 - Present
-          </li>
-        </ul>
-      </div>
-      <div class="section projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <strong>Pixpel:</strong> Blockchain gaming platform focusing on wallet integration (custodial/non-custodial/hybrid), smart contracts, NFT marketplace with Pinata/IPFS, payment gateways (Stripe/Google Pay/Apple Pay), and AWS services.
-          </li>
-          <li>
-            <strong>Muntazim:</strong> Event management platform developed using
-            Next.js with server-side rendering and Tailwind CSS.
-          </li>
-          <li>
-            <strong>Banado:</strong> E-commerce CMS application with React,
-            Node.js, and MongoDB, integrated payment processing.
-          </li>
-          <li>
-            <strong>SGC:</strong> Revitalized a business website with Angular,
-            Bootstrap, and SASS for responsiveness.
-          </li>
-          <li>
-            <strong>Carvaan:</strong> Overhauled both front and back-end for a
-            business website using Angular, Node.js, and Docker.
-          </li>
-          <li>
-            <strong>Traders:</strong> Developed a fully responsive front-end and
-            back-end system for a trading platform using Angular and Node.js,
-            focusing on business operations.
-          </li>
-          <li>
-            <strong>Apu NFT:</strong> A NFT market platform where you can mint
-            NFTs and interact with them using OpenSea. Metadata is automatically
-            handled by IPFS and Pinata.
-          </li>
-          <li>
-  <strong>Mawarid Finance Smart Card System:</strong> Built a private/hybrid
-  blockchain smart wallet platform where each physical ATM card maps to an
-  on-chain wallet, enabling secure ATM transactions and card management across
-  a UAE-wide financial network.
-</li>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Hassan Khan - Blockchain, AI Agent and Full-Stack Engineer</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #f4f6fb;
+    padding: 24px 12px;
+  }
+
+  .page {
+    max-width: 860px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 32px rgba(21,101,192,0.10);
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    color: #fff;
+    padding: 32px 36px 24px;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .header-left { flex: 1; min-width: 220px; }
+  .header-left h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .header-left .role {
+    font-size: 13px;
+    opacity: 0.80;
+    margin-bottom: 14px;
+  }
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+    list-style: none;
+  }
+  .contact-list li a {
+    color: #bbdefb;
+    font-size: 11.5px;
+    text-decoration: none;
+  }
+  .contact-list li a:hover { color: #fff; }
+
+  .header-summary {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 8px;
+    padding: 12px 15px;
+    max-width: 260px;
+    min-width: 200px;
+    font-size: 12px;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.88);
+    flex-shrink: 0;
+  }
+
+  /* BODY */
+  .body { padding: 28px 36px 36px; }
+
+  /* SECTION */
+  .section { margin-bottom: 22px; }
+  .section-title {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: #1565c0;
+    border-bottom: 2px solid #1565c0;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+  }
+
+  /* JOB */
+  .job { margin-bottom: 16px; }
+  .job:last-child { margin-bottom: 0; }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 1px;
+  }
+  .job-title-wrap { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+  .job-title { font-size: 13.5px; font-weight: 700; color: #0d47a1; }
+  .job-date { font-size: 11px; color: #64748b; white-space: nowrap; padding-top: 2px; }
+  .job-company { font-size: 12.5px; font-weight: 600; color: #1565c0; margin-bottom: 6px; }
+  .job-sub { font-size: 11px; color: #64748b; margin-bottom: 6px; }
+
+  .job ul { list-style: none; padding: 0; }
+  .job ul li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 4px;
+    font-size: 12.5px;
+    color: #374151;
+    line-height: 1.55;
+  }
+  .job ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    color: #1565c0;
+    font-size: 9px;
+  }
+
+  /* BADGE */
+  .badge {
+    font-size: 10px;
+    border-radius: 20px;
+    padding: 1px 8px;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .badge-blue { background: #e3f0ff; color: #1565c0; }
+  .badge-purple { background: #f0ebff; color: #5b21b6; }
+
+  /* SKILLS */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px 24px;
+  }
+  .skill-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #0d47a1;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+  }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag {
+    font-size: 10.5px;
+    padding: 2px 9px;
+    border-radius: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .tag-blue { background: #e3f0ff; color: #1565c0; }
+  .tag-purple { background: #f0ebff; color: #5b21b6; }
+
+  /* PROJECTS */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  .project-card {
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #1565c0;
+    border-radius: 6px;
+    padding: 10px 13px;
+  }
+  .project-card.ai { border-left-color: #7c3aed; }
+  .project-name { font-size: 12.5px; font-weight: 700; color: #0d47a1; margin-bottom: 3px; }
+  .project-card.ai .project-name { color: #5b21b6; }
+  .project-desc { font-size: 11.5px; color: #4b5563; line-height: 1.5; }
+
+  /* BOTTOM TWO COL */
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0 36px;
+  }
+
+  /* EDU */
+  .edu-item { margin-bottom: 10px; }
+  .edu-degree { font-size: 12.5px; font-weight: 700; color: #0d47a1; }
+  .edu-school { font-size: 12px; color: #374151; }
+  .edu-date { font-size: 11px; color: #64748b; }
+
+  /* DIVIDER */
+  .divider { border: none; border-top: 1px solid #e2e8f0; margin: 18px 0; }
+
+  /* PRINT */
+  @media print {
+    body { background: #fff; padding: 0; font-size: 12px; }
+    .page { box-shadow: none; border-radius: 0; }
+    .header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .tag, .badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .project-card, .job { break-inside: avoid; }
+  }
+  @page { margin: 0; size: A4; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div class="header-left">
+        <h1>Hassan Khan</h1>
+        <p class="role">Blockchain · AI Agents · Full-Stack Engineer &nbsp;·&nbsp; Karachi, Pakistan</p>
+        <ul class="contact-list">
+          <li><a href="mailto:hassanusman26373@gmail.com">✉ hassanusman26373@gmail.com</a></li>
+          <li><a href="tel:+923343870917">✆ +92-334-3870917</a></li>
+          <li><a href="https://linkedin.com/in/hassan-khan-224653222">in LinkedIn</a></li>
+          <li><a href="https://github.com/Hassankhan6373">⌥ GitHub</a></li>
+          <li><a href="https://gitlab.com/hassankhan26373">⌥ GitLab</a></li>
+        </ul>
+      </div>
+      <div class="header-summary">
+        Full-Stack and Blockchain Developer focused on building Web2 and Web3 products, smart contracts, secure wallet systems, token ecosystems, and autonomous AI agents deployed on cloud infrastructure.
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <div class="section-title">Experience</div>
+
+      <!-- Pixpel -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title-wrap">
+            <span class="job-title">Software Engineer</span>
+            <span class="badge badge-blue">Full-time</span>
+          </div>
+          <span class="job-date">Sep 2023 - Present</span>
+        </div>
+        <div class="job-company">Pixpel.io</div>
+        <ul>
+          <li>Led wallet integrations covering custodial, non-custodial, hybrid, and decentralized setups for a Web3 gaming platform that includes a P2P DEX, launchpad, presale mechanics, and NFT marketplace.</li>
+          <li>Deployed and audited smart contracts in Rust and Solidity on Zeta, Polygon, and other EVM-compatible chains, then addressed audit findings and shipped post-audit security fixes.</li>
+          <li>Built indexer services to query on-chain events, transactions, and balances in real time, powering NFT dashboards, staking tracking, and token ecosystem views.</li>
+          <li>Developed AWS Lambda serverless functions with Docker support for staking reward calculations, presale automation, and integration with S3, RDS, and AWS Rekognition.</li>
+          <li>Integrated Fireblocks for transaction security and private key management, Pinata and IPFS for NFT metadata storage, and Stripe with Google Pay and Apple Pay for fiat on/off-ramps.</li>
+          <li>Built and deployed autonomous AI trading agents (2025 to present) on Virtuals.io, Thirdfy, and Sandbox platforms, including OpenClaw on AWS EC2 for the Degen Claw competition on Hyperliquid perpetuals.</li>
+          <li>Set up the SOUL.md agent strategy covering BTC, ETH, and SOL perps with RSI and EMA signals, 2% max position size, 3% take profit, 1.5% stop loss, and an 8% daily drawdown circuit breaker. Connected Claude AI as the reasoning engine with Telegram for live monitoring.</li>
+          <li>Deployed agents on Ubuntu 24.04 EC2 with PM2, UFW firewall, and Elastic IP for 24/7 uptime with auto-restart.</li>
+        </ul>
+      </div>
+
+      <!-- Alia Nafees -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title-wrap">
+            <span class="job-title">Full-Stack Developer</span>
+            <span class="badge badge-blue">Part-time · Remote</span>
+          </div>
+          <span class="job-date">Sep 2023 - Sep 2024</span>
+        </div>
+        <div class="job-company">Alia Nafees Foundation</div>
+        <ul>
+          <li>Built end-to-end web applications using the MERN stack, Next.js, and NestJS from design to deployment.</li>
+          <li>Designed front-end interfaces, wrote back-end logic, and created RESTful APIs with a focus on clean and maintainable code.</li>
+          <li>Managed MongoDB databases, handled performance optimization, and collaborated with cross-functional teams across multiple project cycles.</li>
+        </ul>
+      </div>
+
+      <!-- Cubicus -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title-wrap">
+            <span class="job-title">Full-Stack Developer</span>
+          </div>
+          <span class="job-date">Sep 2023 - Oct 2024</span>
+        </div>
+        <div class="job-company">Cubicus</div>
+        <ul>
+          <li>Built responsive web applications and set up Fireblocks workspaces for custodial and non-custodial wallet handling with private key management.</li>
+          <li>Worked on DevOps pipelines using AWS Lambda, EC2, S3, RDS, and Docker containerization.</li>
+        </ul>
+      </div>
+
+      <!-- Coderatory -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title-wrap">
+            <span class="job-title">Full-Stack Developer</span>
+          </div>
+          <span class="job-date">Jul 2022 - Sep 2022</span>
+        </div>
+        <div class="job-company">Coderatory</div>
+        <ul>
+          <li>Developed a business website with Angular, SASS, and Bootstrap and used Docker for containerization and deployment.</li>
         </ul>
       </div>
     </div>
-  </body>
+
+    <hr class="divider"/>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="skills-grid">
+
+        <div>
+          <div class="skill-label">Blockchain and Web3</div>
+          <div class="tag-row">
+            <span class="tag tag-blue">Solidity</span>
+            <span class="tag tag-blue">Rust</span>
+            <span class="tag tag-blue">Smart Contracts</span>
+            <span class="tag tag-blue">Fireblocks</span>
+            <span class="tag tag-blue">IPFS</span>
+            <span class="tag tag-blue">Pinata</span>
+            <span class="tag tag-blue">P2P DEX</span>
+            <span class="tag tag-blue">NFT</span>
+            <span class="tag tag-blue">DeFi</span>
+            <span class="tag tag-blue">EVM</span>
+            <span class="tag tag-blue">Staking</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill-label">AI Agents and Automation</div>
+          <div class="tag-row">
+            <span class="tag tag-purple">Claude / Anthropic API</span>
+            <span class="tag tag-purple">OpenAI API</span>
+            <span class="tag tag-purple">Virtuals.io</span>
+            <span class="tag tag-purple">Thirdfy</span>
+            <span class="tag tag-purple">Sandbox</span>
+            <span class="tag tag-purple">OpenClaw</span>
+            <span class="tag tag-purple">PM2</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill-label">Frontend</div>
+          <div class="tag-row">
+            <span class="tag tag-blue">React</span>
+            <span class="tag tag-blue">Next.js</span>
+            <span class="tag tag-blue">Angular</span>
+            <span class="tag tag-blue">React Native</span>
+            <span class="tag tag-blue">TypeScript</span>
+            <span class="tag tag-blue">Redux</span>
+            <span class="tag tag-blue">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill-label">Backend and Cloud</div>
+          <div class="tag-row">
+            <span class="tag tag-blue">Node.js</span>
+            <span class="tag tag-blue">NestJS</span>
+            <span class="tag tag-blue">AWS Lambda</span>
+            <span class="tag tag-blue">EC2</span>
+            <span class="tag tag-blue">S3</span>
+            <span class="tag tag-blue">RDS</span>
+            <span class="tag tag-blue">Docker</span>
+            <span class="tag tag-blue">Ubuntu</span>
+            <span class="tag tag-blue">UFW</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill-label">Databases</div>
+          <div class="tag-row">
+            <span class="tag tag-blue">PostgreSQL</span>
+            <span class="tag tag-blue">MongoDB</span>
+            <span class="tag tag-blue">Redis</span>
+            <span class="tag tag-blue">Firebase</span>
+            <span class="tag tag-blue">MySQL</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill-label">Payments</div>
+          <div class="tag-row">
+            <span class="tag tag-blue">Stripe</span>
+            <span class="tag tag-blue">Google Pay</span>
+            <span class="tag tag-blue">Apple Pay</span>
+            <span class="tag tag-blue">Fiat-Crypto On/Off Ramp</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <div class="section-title">Projects</div>
+      <div class="projects-grid">
+
+        <div class="project-card ai">
+          <div class="project-name">OpenClaw AI Trading Agent</div>
+          <div class="project-desc">Autonomous trading bot on AWS EC2 for the Degen Claw competition on Hyperliquid perps. Uses Claude AI as the reasoning engine, RSI and EMA strategy, Telegram monitoring, PM2 uptime, and UFW security.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-name">Pixpel</div>
+          <div class="project-desc">Blockchain gaming platform with launchpad, audited smart contracts, NFT marketplace via IPFS and Pinata, indexer services, AWS Lambda backend, staking rewards, and Stripe fiat payments.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-name">Mawarid Finance Smart Card System</div>
+          <div class="project-desc">Private blockchain wallet platform where each physical ATM card maps to an on-chain wallet. Deployed across a UAE-wide financial network with full card management and secure ATM transactions.</div>
+        </div>
+
+        <div class="project-card ai">
+          <div class="project-name">AI Agents on Virtuals.io, Thirdfy and Sandbox</div>
+          <div class="project-desc">Built and deployed autonomous AI agents on Virtuals.io, Thirdfy, and Sandbox platforms from 2025. Used MERN stack and NestJS for agent backend infrastructure.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-name">Apu NFT</div>
+          <div class="project-desc">NFT minting marketplace with OpenSea integration. Metadata handled automatically through IPFS and Pinata for on-chain storage.</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-name">Muntazim and Banado</div>
+          <div class="project-desc">Event management platform built with Next.js SSR and Tailwind CSS, plus an e-commerce CMS using React, Node.js, and MongoDB with integrated payment processing.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <!-- EDUCATION + EVENTS -->
+    <div class="bottom-grid">
+
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-item">
+          <div class="edu-degree">Master of Science in Computer Science</div>
+          <div class="edu-school">Bahria University</div>
+          <div class="edu-date">Feb 2024 - Present</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">Bachelor of Engineering in Electronics</div>
+          <div class="edu-school">Usman Institute of Technology</div>
+          <div class="edu-date">Oct 2017 - Nov 2021</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Events and Community</div>
+        <div class="job">
+          <ul>
+            <li><strong>Token2049 Singapore and Dubai</strong> — Attended the world's largest Web3 conference with 20,000 attendees and 500 speakers. Connected with blockchain founders, investors, and builders across DeFi, NFTs, and decentralized ecosystems.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</body>
 </html>
